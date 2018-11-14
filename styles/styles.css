@@ -9,7 +9,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-  
+
 main {
     flex: 1;
 }
@@ -24,6 +24,7 @@ header {
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    padding: 0 10px;
 }
 
 .wrapp {
@@ -41,13 +42,6 @@ h1 {
     overflow-x: scroll;
     white-space: nowrap;
 }
-
-/* .news-bar button {
-    width: auto;
-    height: 40px;
-    margin: 5px;
-    padding: 10px;
-} */
 
 .news-bar div {
     width: auto;
@@ -68,19 +62,18 @@ h1 {
     background-color: red;
 }
 
-/* width */
 ::-webkit-scrollbar {
     height: 5px;
 }
-/* Track */
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
@@ -114,7 +107,7 @@ h1 {
 .news-item:hover {
     opacity: 0.7;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    transition: box-shadow .5s ease,  .5s ease;
+    transition: box-shadow .5s ease, .5s ease;
 }
 
 .news-item h3 {
@@ -158,7 +151,7 @@ h1 {
 footer {
     text-align: center;
     border-top: 2px #000 solid;
-    padding: 10px 0; 
+    padding: 10px 0;
 }
 
 footer span {
@@ -171,4 +164,26 @@ footer span {
 footer a {
     text-decoration: none;
     color: #555;
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapp {
+        width: auto;
+    }
+    .news-content {
+        width: 450px;
+    }
+    .news-bar {
+        height: auto;
+    }
+    .news-bar div {
+        height: auto;
+        font-size: 23px;
+    }
+    .news-item {
+        width: 48%;
+    }
+    .news-item h3 {
+        font-size: 28px;
+    }
 }
